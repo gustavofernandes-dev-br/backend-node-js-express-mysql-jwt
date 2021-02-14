@@ -1,0 +1,25 @@
+USUARIO - Verificando
+Conectado porta 8080
+USUARIO - Ok
+events.js:287
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: Connection lost: The server closed the connection.
+    at Protocol.end (/home/gustavonsantos1983/rtbusiness/backend/node_modules/mysql/lib/protocol/Protocol.js:112:13)
+    at Socket.<anonymous> (/home/gustavonsantos1983/rtbusiness/backend/node_modules/mysql/lib/Connection.js:94:28)
+    at Socket.<anonymous> (/home/gustavonsantos1983/rtbusiness/backend/node_modules/mysql/lib/Connection.js:526:10)
+    at Socket.emit (events.js:322:22)
+    at endReadableNT (_stream_readable.js:1187:12)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21)
+Emitted 'error' event on Connection instance at:
+    at Connection._handleProtocolError (/home/gustavonsantos1983/rtbusiness/backend/node_modules/mysql/lib/Connection.js:423:8)
+    at Protocol.emit (events.js:310:20)
+    at Protocol._delegateError (/home/gustavonsantos1983/rtbusiness/backend/node_modules/mysql/lib/protocol/Protocol.js:398:10)
+    at Protocol.end (/home/gustavonsantos1983/rtbusiness/backend/node_modules/mysql/lib/protocol/Protocol.js:116:8)
+    at Socket.<anonymous> (/home/gustavonsantos1983/rtbusiness/backend/node_modules/mysql/lib/Connection.js:94:28)
+    [... lines matching original stack trace ...]
+    at processTicksAndRejections (internal/process/task_queues.js:84:21) {
+  fatal: true,
+  code: 'PROTOCOL_CONNECTION_LOST'
+}
